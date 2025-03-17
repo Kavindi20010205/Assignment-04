@@ -1,0 +1,12 @@
+div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 250px;
+    width: 400px;
+    background-color: #2E0042;
+    border: 5px solid darkred;
+}

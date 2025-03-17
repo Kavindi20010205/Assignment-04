@@ -1,0 +1,15 @@
+div{
+    position: relative;
+    background-color: mediumpurple;
+    height: 10vh;
+    aspect-ratio: 1/1;
+    transition-timing-function: ease;
+    margin-top: 50px;
+    transition-duration: 10s;
+}
+div:hover{
+    width: 500px;
+}
+.text{
+    height: 10vh;
+}
