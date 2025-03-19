@@ -40,7 +40,6 @@ section{
     margin: auto;
     border-radius: 100%;
 }
-
 section:hover{
     transform: rotate(360deg);
     transition-duration: 1.5s;
