@@ -1,18 +1,18 @@
 div{
-    height: 500px;
+    height: 100vh;
     display: flex;
     align-items: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 div>div{
     height: 0;
     aspect-ratio: 1/1;
     border-radius: 100%;
     border: 5px solid white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 
     animation-name: water_drop;
     animation-iteration-count: infinite;
