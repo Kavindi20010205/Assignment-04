@@ -4,6 +4,7 @@ body{
     background: linear-gradient(to right,darkblue,blue,dodgerblue);
     position: relative;
 }
+
 section{
     position: fixed;
     background-color: white;
@@ -16,6 +17,7 @@ section{
     right: 0;
     margin: auto;
 }
+
 #red{
     position: absolute;
     background-color: red;
@@ -28,6 +30,7 @@ section{
     transform-origin: 100% 100%;
     border-top-left-radius: 100%;
 }
+
 #grey{
     background-color: grey;
     height: 55vh;
@@ -40,11 +43,13 @@ section{
     margin: auto;
     border-radius: 100%;
 }
+
 section:hover{
     transform: rotate(360deg);
     transition-duration: 1.5s;
     transition-timing-function: linear;
 }
+
 #txt{
     position: fixed;
     top: 0;
