@@ -1,0 +1,62 @@
+:root{
+    --section-width: 700px;
+    --section-height: 600px;
+    --div-width: 150px;
+    --div-heigth: 80px;
+}
+
+section{
+    width: var(--section-width);
+    height: var(--section-height);
+    border: 2px solid black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+div{
+    background-color: blue;
+    height: var(--div-heigth);
+    width: var(--div-width);
+
+    border-radius: 20px;
+
+    animation-name: animationCase2;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate
+
+}
+
+@keyframes animationCase2 {
+    0%{
+        background-color: blue;
+        margin-left: 0;
+        transform: rotate(0deg)
+    }
+    25%{
+        background-color: yellow;
+        transform: rotate(360deg);
+        margin-left: calc(var(--section-width) - var(--div-width));
+        margin-top: 0;
+    }
+    50%{
+        background-color: red;
+        transform: rotate(0deg);
+        margin-left: calc(var(--section-width) - var(--div-width));
+        margin-top: calc(var(--section-height) - var(--div-heigth));
+    }
+    75%{
+        background-color: deeppink;
+        transform: rotate(360deg);
+        margin-left: 0;
+        margin-top: calc(var(--section-height) - var(--div-heigth));
+    }
+    100%{
+        background-color: orange;
+        transform: rotate(0deg);
+        margin-left: 0;
+    }
+}
