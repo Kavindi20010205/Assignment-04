@@ -1,12 +1,55 @@
-div{
+section{
+    height: 100vh;
+    width: 100vw;
+    /*background-color: orange;*/
+}
+#abcd{
+    height: 100vh;
+    width: 400vw;
+    /*background-color: mediumpurple;*/
+
+    animation-name: try2;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.imgsss{
+    margin: 0;
+    display: inline;
+    height: 100vh;
+    width: 100vw;
     position: absolute;
-    top: 0;
-    bottom: 0;
+}
+.imgDiv{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: inline;
+}
+.imgDiv:first-child{
     left: 0;
-    right: 0;
-    margin: auto;
-    height: 250px;
-    width: 400px;
-    background-color: #2E0042;
-    border: 5px solid darkred;
+}
+.imgDiv:nth-child(2){
+    left: 100vw;
+}
+.imgDiv:nth-child(3){
+    left: 200vw;
+}
+.imgDiv:nth-child(4){
+    left: 300vw;
+}
+@keyframes try2 {
+    0%{
+        margin-left: 0;
+    }
+    33.33%{
+        margin-left: -100vw;
+    }
+    66.66%{
+        margin-left: -200vw;
+    }
+    100%{
+        margin-left: -300vw;
+    }
 }
