@@ -1,14 +1,9 @@
 div{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-div>div{
     height: 0;
     aspect-ratio: 1/1;
     border-radius: 100%;
-    border: 5px solid white;
+    border: 5px solid orange;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -22,10 +17,9 @@ div>div{
 @keyframes water_drop {
     from{
         height: 0;
-        border: 5px solid orange;
     }
     to{
         height: 400px;
-        border: 5px solid white;
+        opacity: 0;
     }
 }
