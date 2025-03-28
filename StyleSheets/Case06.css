@@ -1,0 +1,128 @@
+section{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#skyImage{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 70vh;
+}
+#carImage{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+.wheels{
+    height: 98px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 68vh;
+    z-index: 1  ;
+
+    animation-name: movingWheel;
+    animation-duration: 20s;
+    animation-iteration-count: 10;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+@keyframes movingWheel {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(3600deg);
+    }
+}
+#wheelLeft{
+    left: 40.2vw;
+}
+#wheelRight{
+    left: 57vw;
+}
+#moving{
+    position: absolute;
+    top: 30vh;
+    width: 1000vw;
+    height: 70vh;
+
+    animation-name: moving;
+    animation-duration: 20s;
+    /*animation-iteration-count: infinite;*/
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+@keyframes moving {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: -900vw;
+    }
+}
+.moveSet{
+    position: absolute;
+    height: 70vh;
+    width: 100vw;
+}
+.moveSet:first-child{
+    top: 0;
+    left: 0;
+}
+.moveSet:nth-child(2){
+    top: 0;
+    left: 100vw;
+}
+.moveSet:nth-child(3){
+    top: 0;
+    left: 200vw;
+}
+.moveSet:nth-child(4){
+    top: 0;
+    left: 300vw;
+}
+.moveSet:nth-child(5){
+    top: 0;
+    left: 400vw;
+}
+.moveSet:nth-child(6){
+    top: 0;
+    left: 500vw;
+}
+.moveSet:nth-child(7){
+    top: 0;
+    left: 600vw;
+}
+.moveSet:nth-child(8){
+    top: 0;
+    left: 700vw;
+}
+.moveSet:nth-child(9){
+    top: 0;
+    left: 800vw;
+}
+.moveSet:nth-child(10){
+    top: 0;
+    left: 900vw;
+}
+
+
+#moveSet>img{
+    width: 100vw;
+    margin: 0;
+}
+.buildingImage{
+    height: 40vh;
+    width: 100vw;
+    margin: 0;
+}
+.roadImage{
+    height: 30vh;
+    width: 100vw;
+    margin: 0;
+}
